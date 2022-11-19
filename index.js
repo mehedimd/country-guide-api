@@ -21,11 +21,11 @@ const showAllCountry = (country) => {
                 <h4 class="card-title">${count}. ${element.name.common}</h4>
                     <ul>
                         <li>Capital : ${element.capital}</li>
-                        <li>Capital : </li>
-                        <li>Capital : </li>
+                        <li>Population : ${element.population}</li>
+
                     </ul>
         
-                <a href="#" class="btn btn-primary">See More</a>
+                <a href="#" class="btn btn-primary" onclick="commingSoon()">See More</a>
                 </div>
             </div>           
             </div>
@@ -59,9 +59,10 @@ srcButton.addEventListener('click',function(){
           <h4 class="card-title"> ${data[0].name.common}</h4>
             <ul>
                 <li>Capital : ${data[0].capital}</li>
+                <li>Population : ${data[0].population}</li>
             </ul>
 
-          <a href="#" class="btn btn-primary">See More</a>
+          <a href="#" class="btn btn-primary" onclick="commingSoon()">See More</a>
         </div>
       </div>
         `
@@ -71,3 +72,9 @@ srcButton.addEventListener('click',function(){
     .catch(error => alert(error));
 
 })
+
+// cooming soon message
+function commingSoon(){
+    alert('Comming Soon');
+};
+
